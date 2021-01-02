@@ -1,7 +1,7 @@
 import React from "react";
-import "./ExperienceCard.css";
+import "./ExperienceList.css";
 
-export default function ExperienceCard(props) {
+function ExperienceCard(props) {
     return (
         <div className="experience__card">
             <div className="experience__front">
@@ -15,7 +15,7 @@ export default function ExperienceCard(props) {
                     {props.shortDescription}
                 </div>
             </div>
-            {props.longDescription &&
+            {props.longDescription !== "" &&
                 <div className="experience__back">
                     <div className="experience__long">
                         {props.longDescription}
@@ -25,6 +25,41 @@ export default function ExperienceCard(props) {
         </div>
     );
 }
+
+class ExperienceList extends React.Component {
+    renderList() {
+        return (
+            this.props.experiences.map((experience, i) => {
+                const title = experience.school ? experience.school : experience.company;
+                const subtitle = experience.degree ? experience.degree : experience.role;
+                const longDescription = experience.long_description ? experience.long_description : "";
+
+                return (
+                    <ExperienceCard
+                        title={title}
+                        startDate={experience.start_date}
+                        endDate={experience.end_date}
+                        subtitle={subtitle}
+                        location={experience.location}
+                        shortDescription={experience.short_description}
+                        longDescription={longDescription}
+                        key={i}
+                    />
+                );
+            })
+        );
+    }
+
+    render() {
+        return (
+            <div className="experience__list">
+                {this.renderList()}
+            </div>
+        );
+    }
+}
+
+export default ExperienceList;
 
 // ========================================
 

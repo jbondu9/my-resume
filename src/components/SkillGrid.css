@@ -1,0 +1,35 @@
+.skill__grid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    grid-template-columns: 1.12fr .76fr;
+    grid-auto-rows: minmax(3.5rem, auto);
+}
+
+.skill__elt {
+    line-height: 2rem;
+    overflow: hidden;
+}
+
+.skill__elt > span {
+    position: relative;
+    display: inline-block;
+}
+
+.skill__elt > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 105px;
+    width: 210px;
+    height: 1.2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    transform: translateY(-50%);
+}
+
+.skill__elt:nth-child(2n) > span::after {
+    left: 58px;
+}

@@ -63,5 +63,31 @@
       "location": "Paris",
       "short_description": "Filières MPSI et MP."
     }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": 64
+    },
+    {
+      "name": "Keras",
+      "level": 28
+    },
+    {
+      "name": "HTML / CSS / JS",
+      "level": 72
+    },
+    {
+      "name": "React",
+      "level": 60
+    },
+    {
+      "name": "Linux",
+      "level": 52
+    },
+    {
+      "name": "Anglais",
+      "level": 80
+    }
   ]
 }
