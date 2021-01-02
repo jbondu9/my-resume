@@ -1,0 +1,48 @@
+:root {
+    --font-weight: 800;
+}
+
+.experience__card {
+    margin-left: 40px;
+    margin-bottom: 24px;
+}
+
+.experience__front {
+    position: relative;
+}
+
+.experience__front::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 100%;
+    width: 10px;
+    height: 10px;
+    margin: 0 18px;
+    border: 2px solid #262626;
+    border-radius: 50%;
+}
+
+.experience__title {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.experience__title > span {
+    font-weight: var(--font-weight);
+    letter-spacing: .3rem;
+}
+
+.experience__subtitle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: .1rem;
+}
+
+.experience__subtitle > span {
+    font-weight: var(--font-weight);
+}

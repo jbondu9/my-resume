@@ -1,0 +1,67 @@
+{
+  "professional_experiences": [
+    {
+      "company": "Solinum",
+      "start_date": "2020-09",
+      "end_date": "2021-03",
+      "role": "Assistant au Chargé de Développement Régional",
+      "location": "Bordeaux",
+      "short_description": "Aide au développement de l’association et de ces deux projets phares, Soliguide et Merci pour l’invit’, sur le département de la Gironde.",
+      "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque eu neque sollicitudin tristique. Vivamus placerat risus ac ipsum tempus."
+    },
+    {
+      "company": "Thales",
+      "start_date": "2019-09",
+      "end_date": "2020-06",
+      "role": "Ingénieur CIFRE",
+      "location": "Mérignac",
+      "short_description": "Analyse de méthodes d’intelligence artificielle pour la classification de trajectoires.",
+      "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque eu neque sollicitudin tristique. Vivamus placerat risus ac ipsum tempus."
+    },
+    {
+      "company": "Enseirb-Matmeca",
+      "start_date": "2019-09",
+      "end_date": "2020-02",
+      "role": "Chargé de TD et TP en École d'Ingénieurs",
+      "location": "Talence",
+      "short_description": "Encadrement des séances de travaux dirigés et travaux pratiques en traitement du signal pour des élèves de première année en école d’ingénieurs.",
+      "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque eu neque sollicitudin tristique. Vivamus placerat risus ac ipsum tempus."
+    },
+    {
+      "company": "Thales",
+      "start_date": "2019-02",
+      "end_date": "2019-07",
+      "role": "Stagiaire en Algorithmie Radar et IA",
+      "location": "Mérignac",
+      "short_description": "Conception d’un réseau de neurones GAN pour la génération de fouillis de mer.",
+      "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque eu neque sollicitudin tristique. Vivamus placerat risus ac ipsum tempus."
+    },
+    {
+      "company": "Zodiac Data Systems",
+      "start_date": "2018-05",
+      "end_date": "2018-08",
+      "role": "Stagiaire en Développement Logiciel",
+      "location": "Les Ulis",
+      "short_description": "Étude de la parallélisation d’un démodulateur sous GNU Radio.",
+      "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque eu neque sollicitudin tristique. Vivamus placerat risus ac ipsum tempus."
+    }
+  ],
+  "education": [
+    {
+      "school": "Enseirb-Matmeca",
+      "start_date": "2015",
+      "end_date": "2019",
+      "degree": "Diplôme d’Ingénieur en Télécommunications",
+      "location": "Bordeaux",
+      "short_description": "Spécialité de dernière année : Traitement du signal et de l’image."
+    },
+    {
+      "school": "Lycée Chaptal",
+      "start_date": "2013",
+      "end_date": "2015",
+      "degree": "Classe Préparatoire aux Grandes Écoles",
+      "location": "Paris",
+      "short_description": "Filières MPSI et MP."
+    }
+  ]
+}
