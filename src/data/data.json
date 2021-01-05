@@ -67,23 +67,23 @@
   "skills": [
     {
       "name": "Python",
-      "level": 64
-    },
-    {
-      "name": "Keras",
-      "level": 28
-    },
-    {
-      "name": "HTML / CSS / JS",
-      "level": 72
-    },
-    {
-      "name": "React",
       "level": 60
     },
     {
+      "name": "Keras",
+      "level": 30
+    },
+    {
+      "name": "HTML / CSS / JS",
+      "level": 70
+    },
+    {
+      "name": "React",
+      "level": 40
+    },
+    {
       "name": "Linux",
-      "level": 52
+      "level": 50
     },
     {
       "name": "Anglais",

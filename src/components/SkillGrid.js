@@ -2,9 +2,17 @@ import React from "react";
 import "./SkillGrid.css";
 
 function SkillElt(props) {
+    const level = {
+        backgroundColor: "#262626",
+        width: props.skillLevel + "%",
+    };
+
     return (
         <div className="skill__elt">
-            <span>{props.skillName}</span>
+            <span className="skill__name">{props.skillName}</span>
+            <div className="skill__bar">
+                <div className="skill__level" style={level}></div>
+            </div>
         </div>
     );
 }
@@ -16,6 +24,7 @@ class SkillGrid extends React.Component {
                 return (
                     <SkillElt
                         skillName={skill.name}
+                        skillLevel={skill.level}
                         key={i}
                     />
                 );

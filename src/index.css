@@ -1,5 +1,6 @@
 :root {
     --primary-color: #262626;
+    --secondary-color: #ffffff;
     --container-padding: 25px;
     --container-width: calc(100% - var(--container-padding) * 2);
 }
