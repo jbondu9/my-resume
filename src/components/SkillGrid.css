@@ -1,24 +1,24 @@
 .skill__grid {
-    display: grid;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    grid-template-columns: 1.12fr .76fr;
-    grid-auto-rows: minmax(3.5rem, auto);
+    display: grid;
+    grid-template-columns: 1fr .88fr;
+    grid-auto-rows: minmax(2rem, auto);
+    gap: 1rem 10%;
 }
 
 .skill__elt {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     line-height: 2rem;
-    overflow: hidden;
 }
 
 .skill__bar {
-    position: absolute;
-    top: 0;
-    left: 112px;
     width: 200px;
-    height: 2rem;
+    height: 1.5rem;
     border: 2px solid var(--primary-color);
     border-radius: 25px;
     box-shadow:
@@ -26,14 +26,30 @@
         -2px -2px var(--secondary-color);
 }
 
-.skill__elt:nth-child(2n) > .skill__bar {
-    left: 63px;
-}
-
 .skill__level {
     position: relative;
     height: 100%;
-    transform: scaleX(.1);
-    transform-origin: left center;
     z-index: -1;
+    transform-origin: left center;
+}
+
+.start {
+    transform: scaleX(.1);
+}
+
+.end {
+    transform: scaleX(1);
+    transition: 400ms ease;
+}
+
+.end::after {
+    content: "";
+    position: relative;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border-right: 15px solid transparent;
+    border-bottom: 1.5rem solid var(--primary-color);
 }
