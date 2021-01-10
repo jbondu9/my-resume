@@ -1,6 +1,7 @@
 import React from "react";
 import Profil from "./components/Profil";
 import Section from "./components/Section";
+import Intro from "./components/Intro";
 import ExperienceList from "./components/ExperienceList";
 import SkillGrid from "./components/SkillGrid";
 import PublicationList from "./components/PublicationList";
@@ -8,6 +9,7 @@ import "./App.css";
 
 import Data from "./data/data.json";
 
+import IntroIcon from "./icons/intro.png";
 import ExperienceIcon from "./icons/experiences.png";
 import EducationIcon from "./icons/education.png";
 import SkillsIcon from "./icons/skills.png";
@@ -21,6 +23,12 @@ function App() {
                     forename={Data.profil.forename}
                     surname={Data.profil.surname}
                     role={Data.profil.role}
+                />
+                <Section
+                    title="Intro"
+                    src={IntroIcon}
+                    alt="Icône de la section intro"
+                    content={<Intro intro={Data.intro} />}
                 />
             </div>
             <div className="right">

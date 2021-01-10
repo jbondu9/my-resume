@@ -41,6 +41,5 @@ export default function Profil(props) {
 
 function parseRole(role) {
     const roleArray = role.split(" ");
-    console.log(roleArray);
     return roleArray.map((word, i) => <span key={i}>{word}</span>);
 }
