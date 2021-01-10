@@ -1,8 +1,9 @@
 :root {
     --primary-color: #262626;
     --secondary-color: #fefefe;
-    --container-padding: 25px;
-    --container-width: calc(100% - var(--container-padding) * 2);
+
+    --section-padding: 25px;
+    --section-width: calc(100% - var(--section-padding) * 2);
 }
 
 * {
@@ -18,10 +19,4 @@ html, body {
     font-size: 12px;
     line-height: 1.4rem;
     background-color: var(--secondary-color);
-}
-
-#root {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
 }

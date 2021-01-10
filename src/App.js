@@ -14,31 +14,36 @@ import PublicationIcon from "./icons/publications.png";
 
 function App() {
     return (
-        <div className="right">
-            <Section
-                title="Expériences professionnelles"
-                src={ExperienceIcon}
-                alt="Icône de la section expériences professionnelles"
-                content={<ExperienceList experiences={Data.professional_experiences} />}
-            />
-            <Section
-                title="Formation"
-                src={EducationIcon}
-                alt="Icône de la section formation"
-                content={<ExperienceList experiences={Data.education} />}
-            />
-            <Section
-                title="Compétences"
-                src={SkillsIcon}
-                alt="Icône de la section compétences"
-                content={<SkillGrid skills={Data.skills} />}
-            />
-            <Section
-                title="Publications"
-                src={PublicationIcon}
-                alt="Icône de la section publications"
-                content={<PublicationList publications={Data.publications} />}
-            />
+        <div className="container">    
+            <div className="left">
+
+            </div>
+            <div className="right">
+                <Section
+                    title="Expériences professionnelles"
+                    src={ExperienceIcon}
+                    alt="Icône de la section expériences professionnelles"
+                    content={<ExperienceList experiences={Data.professional_experiences} />}
+                />
+                <Section
+                    title="Formation"
+                    src={EducationIcon}
+                    alt="Icône de la section formation"
+                    content={<ExperienceList experiences={Data.education} />}
+                />
+                <Section
+                    title="Compétences"
+                    src={SkillsIcon}
+                    alt="Icône de la section compétences"
+                    content={<SkillGrid skills={Data.skills} />}
+                />
+                <Section
+                    title="Publications"
+                    src={PublicationIcon}
+                    alt="Icône de la section publications"
+                    content={<PublicationList publications={Data.publications} />}
+                />
+            </div>
         </div>
     );
 }

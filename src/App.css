@@ -1,8 +1,17 @@
+/* .container {
+    max-width: 1400px;
+    margin: 70px auto;
+} */
+
+.left {
+    float: left;
+    width: calc(40% - 2px);
+}
+
 .right {
     float: right;
     position: relative;
     width: 60%;
-    margin: 70px 0;
 }
 
 .right::before {
