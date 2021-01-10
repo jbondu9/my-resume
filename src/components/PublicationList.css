@@ -1,0 +1,27 @@
+.publication__card {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.publication__card:last-child {
+    margin-bottom: 0;
+}
+
+.publication__info {
+    position: relative;
+}
+
+.publication__info::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: .25rem;
+    height: .25rem;
+    margin: 0 18px;
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import Section from "./components/Section";
 import ExperienceList from "./components/ExperienceList";
-import SkillGrid from "./components/SkillGrid"
+import SkillGrid from "./components/SkillGrid";
+import PublicationList from "./components/PublicationList";
 import "./App.css";
 
 import Data from "./data/data.json";
@@ -9,6 +10,7 @@ import Data from "./data/data.json";
 import ExperienceIcon from "./icons/experiences.png";
 import EducationIcon from "./icons/education.png";
 import SkillsIcon from "./icons/skills.png";
+import PublicationIcon from "./icons/publications.png";
 
 function App() {
     return (
@@ -30,6 +32,12 @@ function App() {
                 src={SkillsIcon}
                 alt="Icône de la section compétences"
                 content={<SkillGrid skills={Data.skills} />}
+            />
+            <Section
+                title="Publications"
+                src={PublicationIcon}
+                alt="Icône de la section publications"
+                content={<PublicationList publications={Data.publications} />}
             />
         </div>
     );

@@ -2,6 +2,7 @@
     float: right;
     position: relative;
     width: 60%;
+    margin: 70px 0;
 }
 
 .right::before {

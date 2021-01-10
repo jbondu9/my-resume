@@ -89,5 +89,23 @@
       "name": "Anglais",
       "level": 80
     }
+  ],
+  "publications": [
+    {
+      "authors": "Bondu, J., Grivel, E., Giremus, A., Legrand, P., Corretja, V. & Pommier, M.",
+      "date": "(2020, August)",
+      "title": "Sea Target Classification Based On A Priori Motion Model",
+      "conference": "In 2020 28th European Signal Processing Conference (EUSIPCO)",
+      "pages": "(pp. 2478-2482)",
+      "acronym": "IEEE"
+    },
+    {
+      "authors": "Bondu, J., Mishra, A., Laxmi, V., & Gaur, M. S.",
+      "date": "(2017, August)",
+      "title": "Flooding In Secure Wireless Sensor Network: Student Contribution",
+      "conference": "In Proceedings of the 10th International Conference on Security of Information and Networks",
+      "pages": "(pp. 151-156)",
+      "acronym": ""
+    }
   ]
 }
