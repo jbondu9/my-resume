@@ -1,4 +1,9 @@
 {
+  "profil": {
+    "forename": "Jimmy",
+    "surname": "Bondu",
+    "role": "Ingénieur en Télécommunications"
+  },
   "professional_experiences": [
     {
       "company": "Solinum",

@@ -19,7 +19,7 @@
     right: 100%;
     width: .25rem;
     height: .25rem;
-    margin: 0 18px;
+    margin: 0 22px;
     background-color: var(--primary-color);
     transform: translateY(-50%);
     border: 2px solid var(--primary-color);

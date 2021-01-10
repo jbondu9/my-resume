@@ -1,4 +1,5 @@
 import React from "react";
+import Profil from "./components/Profil";
 import Section from "./components/Section";
 import ExperienceList from "./components/ExperienceList";
 import SkillGrid from "./components/SkillGrid";
@@ -16,7 +17,11 @@ function App() {
     return (
         <div className="container">    
             <div className="left">
-
+                <Profil
+                    forename={Data.profil.forename}
+                    surname={Data.profil.surname}
+                    role={Data.profil.role}
+                />
             </div>
             <div className="right">
                 <Section
