@@ -2,6 +2,7 @@ import React from "react";
 import Profil from "./components/Profil";
 import Section from "./components/Section";
 import Intro from "./components/Intro";
+import Contact from "./components/Contact";
 import ExperienceList from "./components/ExperienceList";
 import SkillGrid from "./components/SkillGrid";
 import PublicationList from "./components/PublicationList";
@@ -10,6 +11,7 @@ import "./App.css";
 import Data from "./data/data.json";
 
 import IntroIcon from "./icons/intro.png";
+import ContactIcon from "./icons/contact.png";
 import ExperienceIcon from "./icons/experiences.png";
 import EducationIcon from "./icons/education.png";
 import SkillsIcon from "./icons/skills.png";
@@ -29,6 +31,12 @@ function App() {
                     src={IntroIcon}
                     alt="Icône de la section intro"
                     content={<Intro intro={Data.intro} />}
+                />
+                <Section
+                    title="Contact"
+                    src={ContactIcon}
+                    alt="Icône de la section contact"
+                    content={<Contact data={Data.contact}/>}
                 />
             </div>
             <div className="right">

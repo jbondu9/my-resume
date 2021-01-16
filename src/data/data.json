@@ -5,6 +5,13 @@
     "role": "Ingénieur en Télécommunications"
   },
   "intro": "Ingénieur en Télécommunications spécialisé en traitement du signal et de l'image, j'aime travailler dans le développement d'outils tech ainsi que l'analyse de données. Appliqué dans mon travail et ouvert d'esprit, j'apprécie aussi le partage de bons conseils et de bonnes pratiques pour m'améliorer dans mon travail et être en mesure d'aider par la suite.",
+  "contact": {
+    "address": "5 rue Duluc - 33000 Bordeaux",
+    "phone": "07 67 37 03 46",
+    "mail": "jimmy.bondu@zoho.com",
+    "linkedin": "linkedin.com/in/jbondu/",
+    "github": "github.com/jbondu9"
+  },
   "professional_experiences": [
     {
       "company": "Solinum",
