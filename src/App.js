@@ -3,6 +3,7 @@ import Profil from "./components/Profil";
 import Section from "./components/Section";
 import Intro from "./components/Intro";
 import Contact from "./components/Contact";
+import SoftSkills from "./components/SoftSkills";
 import ExperienceList from "./components/ExperienceList";
 import SkillGrid from "./components/SkillGrid";
 import PublicationList from "./components/PublicationList";
@@ -12,6 +13,7 @@ import Data from "./data/data.json";
 
 import IntroIcon from "./icons/intro.png";
 import ContactIcon from "./icons/contact.png";
+import SoftSkillsIcon from "./icons/personal.png";
 import ExperienceIcon from "./icons/experiences.png";
 import EducationIcon from "./icons/education.png";
 import SkillsIcon from "./icons/skills.png";
@@ -36,7 +38,13 @@ function App() {
                     title="Contact"
                     src={ContactIcon}
                     alt="Icône de la section contact"
-                    content={<Contact data={Data.contact}/>}
+                    content={<Contact data={Data.contact} />}
+                />
+                <Section
+                    title="Profil"
+                    src={SoftSkillsIcon}
+                    alt="Icône de la section aptitudes"
+                    content={<SoftSkills softSkills={Data.soft_skills} />}
                 />
             </div>
             <div className="right">

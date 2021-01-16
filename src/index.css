@@ -2,6 +2,7 @@
     --primary-color: #262626;
     --secondary-color: #fefefe;
     --tertiary-color: #00b0f0;
+    --quaternary-color: #c0c0c0;
 
     --section-padding: 25px;
     --section-width: calc(100% - var(--section-padding) * 2);
