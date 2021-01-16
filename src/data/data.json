@@ -12,6 +12,32 @@
     "linkedin": "linkedin.com/in/jbondu/",
     "github": "github.com/jbondu9"
   },
+  "soft_skills": [
+    {
+      "name": "Curieux",
+      "level": 60
+    },
+    {
+      "name": "Rigoureux",
+      "level": 70
+    },
+    {
+      "name": "Esprit d'équipe",
+      "level": 85
+    },
+    {
+      "name": "Autonome",
+      "level": 55
+    },
+    {
+      "name": "Créatif",
+      "level": 50
+    },
+    {
+      "name": "Patient",
+      "level": 70
+    }
+  ],
   "professional_experiences": [
     {
       "company": "Solinum",
