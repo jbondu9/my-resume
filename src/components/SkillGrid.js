@@ -1,11 +1,12 @@
 import React from "react";
+import useLazyAnimation from "./Animation";
 import "./SkillGrid.css";
 
 function SkillElt(props) {
     const delay = Math.floor(Math.random() * (200)).toString(10);
 
     const level = {
-        backgroundColor: "#262626",
+        backgroundColor: "var(--primary-color)",
         width: props.skillLevel + "%",
         transitionDelay: delay + "ms"
     };
@@ -17,9 +18,9 @@ function SkillElt(props) {
             <div className="skill__name">{props.skillName}</div>
             <div className="skill__bar">
                 {!triggerOnce ?
-                    <div className="skill__level start" style={level}></div>
+                    <div className="skill__level skill__level--start"></div>
                     :
-                    <div className="skill__level end" style={level}></div>
+                    <div className="skill__level skill__level--end" style={level}></div>
                 }
             </div>
         </div>
@@ -51,31 +52,3 @@ class SkillGrid extends React.Component {
 }
 
 export default SkillGrid;
-
-// ========================================
-
-function useLazyAnimation(options) {
-    const [ref, setRef] = React.useState(null);
-    const [triggerOnce, setTriggerOnce] = React.useState(false);
-
-    React.useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setTriggerOnce(true);
-            }
-        }, options);
-
-        if (ref) {
-            observer.observe(ref);
-        }
-
-        return () => {
-            if (ref) {
-                observer.unobserve(ref);
-            }
-        };
-
-    }, [ref, options]);
-
-    return [setRef, triggerOnce];
-}

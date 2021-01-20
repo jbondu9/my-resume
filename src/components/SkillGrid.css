@@ -33,16 +33,16 @@
     transform-origin: left center;
 }
 
-.start {
+.skill__level--start {
     transform: scaleX(.1);
 }
 
-.end {
+.skill__level--end {
     transform: scaleX(1);
     transition: 400ms ease;
 }
 
-.end::after {
+.skill__level--end::after {
     content: "";
     position: relative;
     left: 100%;
