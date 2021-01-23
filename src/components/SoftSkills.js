@@ -27,6 +27,7 @@ function SoftSkillElt(props) {
             {!triggerOnce ?
                 <div className="softskills__circle"></div>
                 :
+                // <div className="softskills__circle"></div>
                 <div className="softskills__circle" style={circle}></div>
             }
             {!triggerOnce ?
@@ -39,6 +40,7 @@ function SoftSkillElt(props) {
                 <div className="softskills__cache">
                     {props.softSkillLevel > 50 &&
                         <div className="softskills__level" style={level}></div>
+                        // <div className="softskills__level"></div>
                     }
                 </div>
             }

@@ -4,7 +4,6 @@
 }
 
 .publication__card {
-    /* margin-left: 20px; */
     margin-bottom: 20px;
 }
 
@@ -16,17 +15,23 @@
     position: relative;
 }
 
-/* .publication__info::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    width: .25rem;
-    height: .25rem;
-    margin: 0 12px;
-    background-color: var(--primary-color);
-    transform: translateY(-50%);
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-} */
+@media only screen and (min-width: 540px) {
+    .publication__card {
+        margin-left: 10px;
+    }
+
+    .publication__info::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: .25rem;
+        height: .25rem;
+        margin: 0 8px;
+        background-color: var(--primary-color);
+        transform: translateY(-50%);
+        border: 2px solid var(--primary-color);
+        border-radius: 50%;
+    }
+}

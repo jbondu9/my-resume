@@ -20,7 +20,7 @@ function SectionContent(props) {
 
 export default function Section(props) {
     return (
-        <div className="section">
+        <div className="section" id={props.id}>
             <SectionHeader
                 title={props.title}
                 src={props.src}

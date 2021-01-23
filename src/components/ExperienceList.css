@@ -1,6 +1,6 @@
 .experience__card {
+    width: 95%;
     margin: 0 auto;
-    /* margin-left: 40px; */
     margin-bottom: 25px;
 }
 
@@ -9,27 +9,13 @@
 }
 
 .experience__title {
-    /* position: relative; */
+    position: relative;
     font-size: 16px;
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
-
-/* .experience__title::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    width: 10px;
-    height: 10px;
-    margin: 0 18px;
-    transform: translateY(-50%);
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-} */
 
 .experience__title > span {
     font-weight: 800;
@@ -45,22 +31,21 @@
     font-weight: 800;
 }
 
-.experience__short {
+.experience__front, .experience__back {
     margin: 5px 0;
 }
 
-.experience__long {
-    margin: 0;
+.experience__back {
     padding: 0;
     padding-left: 15px;
     list-style: none;
 }
 
-.experience__long--item {
+.experience__back--item {
     position: relative;
 }
 
-.experience__long--item::before {
+.experience__back--item::before {
     position: absolute;
     content: "";
     width: 5px;
@@ -70,5 +55,50 @@
     margin-right: 8px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 540px) {
+    .experience__card {
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .experience__btn, #education .experience__title::before {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin: 0 10px;
+        transform: translateY(-50%);
+        border: 2px solid var(--primary-color);
+        border-radius: 50%;
+    }
+
+    .experience__btn {
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+    }
+
+    #education .experience__title::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+    }
+
+    #professional-experiences .experience__content {
+        height: 5rem;
+        position: relative;
+    }
+
+    #professional-experiences .experience__front, #professional-experiences .experience__back {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: opacity ease 400ms;
+    }
+    
+    #professional-experiences .experience__front--active, #professional-experiences .experience__back--active {
+        opacity: 1;
+    }
 }

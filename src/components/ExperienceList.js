@@ -2,24 +2,41 @@ import React from "react";
 import "./ExperienceList.css";
 
 function ExperienceCard(props) {
+
+    const [stateTabs, setStateTabs] = React.useState("back"); 
+
     return (
         <div className="experience__card">
-            <div className="experience__front">
-                <div className="experience__title">
-                    <span>{props.title}</span> / {parseDate(props.startDate)} - {parseDate(props.endDate)}
-                </div>
-                <div className="experience__subtitle">
-                    <span>{props.subtitle}</span> / {props.location}
-                </div>
-                <div className="experience__short">
-                    {props.shortDescription}
-                </div>
+            <div className="experience__title">
+                {props.longDescription !== "" &&
+                    <div className="experience__btn" onClick={() => {
+                        stateTabs === "front" ? setStateTabs("back") : setStateTabs("front");
+                    }}></div>
+                }
+                <span>{props.title}</span> / {parseDate(props.startDate)} - {parseDate(props.endDate)}
             </div>
-            {props.longDescription !== "" &&
-                <div className="experience__back">
-                    <ul className="experience__long">
+            <div className="experience__subtitle">
+                <span>{props.subtitle}</span> / {props.location}
+            </div>
+            {props.longDescription !== "" ?
+                <div className="experience__content">
+                    <div className={`experience__front${stateTabs === "front" ? " experience__front--active" : ""}`}>
+                        {props.shortDescription}
+                    </div>
+                    <ul className={`experience__back${stateTabs === "back" ? " experience__back--active" : ""}`}>
                         {parseLongDescription(props.longDescription)}
                     </ul>
+                </div>
+                :
+                <div className="experience__content">
+                    <div className="experience__front">
+                        {props.shortDescription}
+                    </div>
+                    {props.longDescription !== "" &&
+                        <ul className="experience__back">
+                            {parseLongDescription(props.longDescription)}
+                        </ul>
+                    }
                 </div>
             }
         </div>
@@ -90,7 +107,7 @@ function parseLongDescription(longDescription) {
     for (let i = 0; i < longDescriptionArray.length - 1; i++) {
         list.push(
             <li
-                className="experience__long--item"
+                className="experience__back--item"
                 key={i}
             >
                 {longDescriptionArray[i]}
