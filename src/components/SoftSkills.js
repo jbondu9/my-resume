@@ -3,21 +3,18 @@ import useLazyAnimation from "./Animation";
 import "./SoftSkills.css";
 
 function SoftSkillElt(props) {
+    const delay = Math.floor(Math.random() * (300));
     const rotationDeg = 180 * (1 - (props.softSkillLevel / 50));
-    const delay = Math.floor(Math.random() * (200));
 
     const circle = {
         transform: "translate(-100%, -50%) rotate(180deg)",
-        transitionDelay: delay + "ms",
-        transitionDuration: "250ms"
+        transitionDelay: delay.toString(10) + "ms"
     }
 
     const level = {
-        transform: `rotate(${rotationDeg}deg)`,
         opacity: 1,
-        transitionDelay: (250 + delay).toString(10) + "ms",
-        transitionProperty: "transform, opacity",
-        transitionDuration: "250ms, 0ms"
+        transform: `rotate(${rotationDeg}deg)`,
+        transitionDelay: (440 + delay).toString(10) + "ms",
     };
 
     const [setRef, triggerOnce] = useLazyAnimation({ threshold: 1 });

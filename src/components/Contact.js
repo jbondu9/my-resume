@@ -15,10 +15,10 @@ export default function Contact(props) {
                     <a href={parseMail(mail)}>{mail}</a>
                 </li>
                 <li className="contact__item">
-                    <a href={parseLinkedin(linkedin)} target="_blank">{linkedin}</a>
+                    <a href={parseLinkedin(linkedin)} target="_blank" rel="noreferrer">{linkedin}</a>
                 </li>
                 <li className="contact__item">
-                    <a href={parseGit(github)} target="_blank">{github}</a>
+                    <a href={parseGit(github)} target="_blank" rel="noreferrer">{github}</a>
                 </li>
             </ul>
         </div>

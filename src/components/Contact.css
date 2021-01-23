@@ -26,6 +26,10 @@
     border-radius: 50%;
 }
 
+.contact__item:last-child {
+    margin-bottom: 5px;
+}
+
 .contact__item > a {
     color: inherit;
     text-decoration: none;

@@ -5,22 +5,21 @@ import "./SkillGrid.css";
 function SkillElt(props) {
     const delay = Math.floor(Math.random() * (200)).toString(10);
 
-    const level = {
-        backgroundColor: "var(--primary-color)",
-        width: props.skillLevel + "%",
+    const levelEnd = {
+        transform: `translateX(calc(${props.skillLevel - 92}% - 10px))`,
         transitionDelay: delay + "ms"
     };
 
-    const [setRef, triggerOnce] = useLazyAnimation({ threshold: 1 });
+    const [setRef, triggerOnce] = useLazyAnimation({ threshold: .8 });
 
     return (
         <div className="skill__elt" ref={setRef}>
             <div className="skill__name">{props.skillName}</div>
             <div className="skill__bar">
                 {!triggerOnce ?
-                    <div className="skill__level skill__level--start"></div>
+                    <div className="skill__level"></div>
                     :
-                    <div className="skill__level skill__level--end" style={level}></div>
+                    <div className="skill__level" style={levelEnd}></div>
                 }
             </div>
         </div>

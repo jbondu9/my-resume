@@ -2,54 +2,63 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr .88fr;
     grid-auto-rows: minmax(2rem, auto);
     gap: 1rem 10%;
+    overflow: hidden; */
 }
 
 .skill__elt {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    line-height: 2rem;
+    line-height: 2rem; */
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-auto-rows: minmax(2.5rem, auto);
+    column-gap: 10px;
+    align-items: center;
 }
 
 .skill__bar {
-    width: 200px;
-    height: 1.5rem;
+    position: relative;
+    max-width: 220px;
+    height: calc(1.5rem + 2px);
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.skill__bar::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
     border: 2px solid var(--primary-color);
     border-radius: 25px;
-    box-shadow:
-        -2px 2px var(--secondary-color),
-        -2px -2px var(--secondary-color);
 }
 
 .skill__level {
     position: relative;
     height: 100%;
-    z-index: -1;
-    transform-origin: left center;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform-origin: right center;
+    transform: translateX(-95%);
+    transition: 450ms ease;
 }
 
-.skill__level--start {
-    transform: scaleX(.1);
-}
-
-.skill__level--end {
-    transform: scaleX(1);
-    transition: 400ms ease;
-}
-
-.skill__level--end::after {
+.skill__level::after {
+    position: absolute;
     content: "";
-    position: relative;
-    left: 100%;
     top: 0;
+    left: 100%;
     width: 0;
     height: 0;
-    display: block;
     border-right: 15px solid transparent;
-    border-bottom: 1.5rem solid var(--primary-color);
+    border-bottom: calc(1.5rem + 1px) solid var(--primary-color);
 }

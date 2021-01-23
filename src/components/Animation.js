@@ -6,9 +6,7 @@ export default function useLazyAnimation(options) {
 
     React.useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setTriggerOnce(true);
-            }
+            setTriggerOnce(entry.isIntersecting);
         }, options);
 
         if (ref) {
@@ -21,7 +19,7 @@ export default function useLazyAnimation(options) {
             }
         };
 
-    }, [ref, options]);
+    }, [ref, triggerOnce, options]);
 
     return [setRef, triggerOnce];
 }

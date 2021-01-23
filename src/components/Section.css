@@ -46,14 +46,15 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2em;
-    overflow: hidden;
     text-align: center;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .section__title > span {
     position: relative;
     display: inline-block;
+    max-width: 200px;
 }
 
 .section__title > span::before, .section__title > span::after {

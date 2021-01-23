@@ -17,9 +17,9 @@ function ExperienceCard(props) {
             </div>
             {props.longDescription !== "" &&
                 <div className="experience__back">
-                    <div className="experience__long">
-                        {props.longDescription}
-                    </div>
+                    <ul className="experience__long">
+                        {parseLongDescription(props.longDescription)}
+                    </ul>
                 </div>
             }
         </div>
@@ -80,4 +80,23 @@ function parseDate(dateString) {
     }
     
     return utcDate.toLocaleDateString("fr", options)
+}
+
+function parseLongDescription(longDescription) {
+    const longDescriptionArray = longDescription.split(".");
+
+    let list = [];
+
+    for (let i = 0; i < longDescriptionArray.length - 1; i++) {
+        list.push(
+            <li
+                className="experience__long--item"
+                key={i}
+            >
+                {longDescriptionArray[i]}
+            </li>
+        );
+    }
+
+    return list;
 }

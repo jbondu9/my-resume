@@ -1,5 +1,10 @@
+.publication__list {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .publication__card {
-    margin-left: 40px;
+    /* margin-left: 20px; */
     margin-bottom: 20px;
 }
 
@@ -11,7 +16,7 @@
     position: relative;
 }
 
-.publication__info::before {
+/* .publication__info::before {
     content: "";
     display: block;
     position: absolute;
@@ -19,9 +24,9 @@
     right: 100%;
     width: .25rem;
     height: .25rem;
-    margin: 0 22px;
+    margin: 0 12px;
     background-color: var(--primary-color);
     transform: translateY(-50%);
     border: 2px solid var(--primary-color);
     border-radius: 50%;
-}
+} */

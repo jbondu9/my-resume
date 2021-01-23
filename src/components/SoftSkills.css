@@ -35,8 +35,9 @@
     border-left: 3px solid var(--primary-color);
     border-top: 3px solid var(--primary-color);
     border-radius: 8rem 0 0 8rem;
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%) rotate(10deg);
     transform-origin: right center;
+    transition: 460ms ease-in;
     z-index: 2;
 }
 
@@ -83,7 +84,10 @@
     border-top: 3px solid var(--primary-color);
     border-radius: 8rem 0 0 8rem;
     transform-origin: right center;
-    transform: rotate(-90deg);
     opacity: 0;
+    transform: rotate(-180deg);
+    transition-property: opacity, transform;
+    transition-duration: 100ms, 360ms;
+    transition-timing-function: ease-out, ease-out;
     z-index: 4;
 }

@@ -1,19 +1,14 @@
 .container {
-    max-width: 1100px;
     margin: 0 auto;
 }
 
 .left {
-    float: left;
-    width: calc(100% - 820px);
-    margin: 70px 0;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .right {
-    float: right;
-    /* position: relative; */
-    width: 820px;
-    margin: 70px 0;
+    margin-bottom: 60px;
 }
 
 /* .right::before {
@@ -24,5 +19,9 @@
     bottom: 0;
     width: 2px;
     height: 100%;
-    background-color: #262626;
+    background-color: var(--primary-color);
+} */
+
+/* @media only screen and (min-width: 1110px) {
+
 } */
