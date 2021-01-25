@@ -4,7 +4,7 @@ import "./SoftSkills.css";
 
 function SoftSkillElt(props) {
     const delay = Math.floor(Math.random() * (300));
-    const rotationDeg = 180 * (1 - (props.softSkillLevel / 50));
+    const rotationDeg = 180 * ((props.softSkillLevel / 50) - 2);
 
     const circle = {
         transform: "translate(-100%, -50%) rotate(180deg)",

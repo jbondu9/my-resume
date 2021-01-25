@@ -3,14 +3,14 @@ import "./ExperienceList.css";
 
 function ExperienceCard(props) {
 
-    const [stateTabs, setStateTabs] = React.useState("back"); 
+    const [visible, setVisible] = React.useState(true); 
 
     return (
         <div className="experience__card">
             <div className="experience__title">
                 {props.longDescription !== "" &&
                     <div className="experience__btn" onClick={() => {
-                        stateTabs === "front" ? setStateTabs("back") : setStateTabs("front");
+                        visible === true ? setVisible(false) : setVisible(true);
                     }}></div>
                 }
                 <span>{props.title}</span> / {parseDate(props.startDate)} - {parseDate(props.endDate)}
@@ -18,27 +18,16 @@ function ExperienceCard(props) {
             <div className="experience__subtitle">
                 <span>{props.subtitle}</span> / {props.location}
             </div>
-            {props.longDescription !== "" ?
-                <div className="experience__content">
-                    <div className={`experience__front${stateTabs === "front" ? " experience__front--active" : ""}`}>
-                        {props.shortDescription}
-                    </div>
-                    <ul className={`experience__back${stateTabs === "back" ? " experience__back--active" : ""}`}>
+            <div className="experience__content">
+                <div className="experience__front" colSpan="3">
+                    {props.shortDescription}
+                </div>
+                {props.longDescription !== "" &&
+                    <ul className={`experience__back${visible === true ? " experience__back--active" : ""}`}>
                         {parseLongDescription(props.longDescription)}
                     </ul>
-                </div>
-                :
-                <div className="experience__content">
-                    <div className="experience__front">
-                        {props.shortDescription}
-                    </div>
-                    {props.longDescription !== "" &&
-                        <ul className="experience__back">
-                            {parseLongDescription(props.longDescription)}
-                        </ul>
-                    }
-                </div>
-            }
+                }
+            </div>
         </div>
     );
 }

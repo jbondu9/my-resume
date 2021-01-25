@@ -11,17 +11,37 @@
     margin-bottom: 60px;
 }
 
-/* .right::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    width: 2px;
-    height: 100%;
-    background-color: var(--primary-color);
-} */
+@media only screen and (min-width: 650px) {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
-/* @media only screen and (min-width: 1110px) {
+    .left {
+        float: left;
+        margin: 70px 0;
+        max-width: 310px;
+    }
 
-} */
+    .right {
+        float: right;
+        position: relative;
+        width: calc(100% - 310px);
+        margin: 70px 0;
+    }
+
+    .right::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+        background-color: var(--primary-color);
+    }
+
+    .right::after {
+        clear: both;
+    }
+}
