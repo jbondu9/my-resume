@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-resume/static/css/main.76fa98f5.chunk.css",
+    "main.js": "/my-resume/static/js/main.ec6a8a14.chunk.js",
+    "main.js.map": "/my-resume/static/js/main.ec6a8a14.chunk.js.map",
+    "runtime-main.js": "/my-resume/static/js/runtime-main.40771836.js",
+    "runtime-main.js.map": "/my-resume/static/js/runtime-main.40771836.js.map",
+    "static/js/2.3803b368.chunk.js": "/my-resume/static/js/2.3803b368.chunk.js",
+    "static/js/2.3803b368.chunk.js.map": "/my-resume/static/js/2.3803b368.chunk.js.map",
+    "index.html": "/my-resume/index.html",
+    "static/css/main.76fa98f5.chunk.css.map": "/my-resume/static/css/main.76fa98f5.chunk.css.map",
+    "static/js/2.3803b368.chunk.js.LICENSE.txt": "/my-resume/static/js/2.3803b368.chunk.js.LICENSE.txt",
+    "static/media/contact.e84f0292.png": "/my-resume/static/media/contact.e84f0292.png",
+    "static/media/education.e3b8b53a.png": "/my-resume/static/media/education.e3b8b53a.png",
+    "static/media/intro.f47bb6b1.png": "/my-resume/static/media/intro.f47bb6b1.png",
+    "static/media/personal.ef4e17ab.png": "/my-resume/static/media/personal.ef4e17ab.png",
+    "static/media/Profil.css": "/my-resume/static/media/profil.0fc9a2b1.jpeg",
+    "static/media/publications.7587cfd2.png": "/my-resume/static/media/publications.7587cfd2.png",
+    "static/media/skills.9eff7b13.png": "/my-resume/static/media/skills.9eff7b13.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40771836.js",
+    "static/js/2.3803b368.chunk.js",
+    "static/css/main.76fa98f5.chunk.css",
+    "static/js/main.ec6a8a14.chunk.js"
+  ]
+}
