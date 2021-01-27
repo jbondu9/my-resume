@@ -43,6 +43,12 @@
 
 .experience__back--item {
     position: relative;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.experience__back--item:last-child {
+    margin-bottom: 0;
 }
 
 .experience__back--item::before {

@@ -41,6 +41,25 @@
     height: 77%;
 }
 
+
+#contact .section__icon > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+    height: 70%;
+}
+
+#professional-experiences .section__icon > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-53%);
+    width: 72%;
+    height: 72%;
+}
+
 .section__title {
     margin-top: 10px;
     font-size: 18px;

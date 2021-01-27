@@ -6,7 +6,7 @@ export default function Intro(props) {
     
     return (
         <div className="intro">
-            {introArray.map((sentence, i) => <span key={i}>{sentence}</span>)}
+            {introArray.map((sentence, i) => <span key={i}>{sentence}.</span>)}
         </div>
     );
 }

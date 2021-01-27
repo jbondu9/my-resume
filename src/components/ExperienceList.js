@@ -99,7 +99,7 @@ function parseLongDescription(longDescription) {
                 className="experience__back--item"
                 key={i}
             >
-                {longDescriptionArray[i]}
+                {longDescriptionArray[i]}.
             </li>
         );
     }
