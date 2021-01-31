@@ -34,7 +34,7 @@ function parseMail(mail) {
 }
 
 function parseLinkedin(linkedin) {
-    return "https://www" + linkedin;
+    return "https://www." + linkedin;
 }
 
 function parseGit(github) {
