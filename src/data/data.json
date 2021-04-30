@@ -4,7 +4,7 @@
     "surname": "Bondu",
     "role": "Ingénieur en Télécommunications"
   },
-  "intro": "Ingénieur en Télécommunications spécialisé en traitement du signal et de l'image, j'aime travailler dans le développement d'outils tech ainsi que l'analyse de données. Appliqué dans mon travail et ouvert d'esprit, j'apprécie aussi le partage de bons conseils et de bonnes pratiques pour m'améliorer dans mon travail et être en mesure d'aider par la suite.",
+  "intro": "Bonjour, moi c'est Jimmy et je suis ingénieur en Télécommunications. Passé par le monde de la R&D, de l'IA et de la social-tech, je navigue entre les projets techniques du monde de l'entreprise et ceux plus engageants de l'univers associatif. Aujourd'hui, plein d'envies à vouloir continuer à développer mes compétences dans le domaine du développement web, je suis à la recherche d'une nouvelle opportunité qui me permettrait de grandir sur le sujet tout en apportant mon lot de connaissances.",
   "contact": {
     "address": "5 rue Duluc - 33000 Bordeaux",
     "phone": "07 67 37 03 46",
@@ -22,7 +22,7 @@
       "level": 71
     },
     {
-      "name": "Pédagogie",
+      "name": "Pédagogue",
       "level": 77
     },
     {
@@ -96,24 +96,24 @@
   ],
   "skills": [
     {
-      "name": "Python",
-      "level": 60
+      "name": "HTML / CSS / JS",
+      "level": 70
     },
     {
-      "name": "HTML / CSS / JS",
+      "name": "React / Angular / Nuxt",
       "level": 50
     },
     {
-      "name": "Keras",
-      "level": 30
+      "name": "Node / Mongo",
+      "level": 35
     },
     {
-      "name": "React",
-      "level": 30
+      "name": "Python",
+      "level": 65
     },
     {
-      "name": "Linux",
-      "level": 40
+      "name": "Airtable",
+      "level": 65
     },
     {
       "name": "Anglais",

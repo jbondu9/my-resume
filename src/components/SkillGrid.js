@@ -6,7 +6,7 @@ function SkillElt(props) {
     const delay = Math.floor(Math.random() * (200)).toString(10);
 
     const levelEnd = {
-        transform: `translateX(calc(${props.skillLevel - 92}% - 10px))`,
+        transform: `translateX(calc(${props.skillLevel - 100}% - 10px))`,
         transitionDelay: delay + "ms"
     };
 
